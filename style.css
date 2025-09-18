@@ -7,10 +7,10 @@
 :root {
   --text-color2: black;
   --text-color: white;
-  --bg-url: url(fundo-white.png);
+  --bg-url: url(assets/fundo-white.png);
   --surface-color: rgb(78, 77, 82, 0.8);
   --stronk-color: rgba(0, 0, 0, 0.8);
-  --switch-bg-url: url(sun.svg);
+  --switch-bg-url: url(assets/sun.svg);
   /*modo dark*/
 }
 
@@ -19,10 +19,10 @@
 .light {
   --text-color: black;
   --text-color2: white;
-  --bg-url: url(fundo-black.png);
+  --bg-url: url(assets/fundo-black.png);
   --stronk-color: rgba(255, 255, 255, 0.8);
   --surface-color: rgba(255, 255, 255, 0.8);
-  --switch-bg-url:url(moon-stars.svg);
+  --switch-bg-url:url(assets/moon-stars.svg);
   /*modo light*/
 }
 
