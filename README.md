@@ -1,4 +1,5 @@
 # Linktree Personalizado
+# Linktree Personalizado
 <div align="center">Linktree Personalizado</div>
 
 <p align="center">
@@ -53,4 +54,4 @@ Feito com 💜 por **João Vitor Barbosa** 🚀
 
 - Instagram: [@jbarbosaxw](https://instagram.com/jbarbosaxw)  
 - LinkedIn: [Perfil](https://linkedin.com/in/jbarbosaxw)  
-- GitHub: [Repositório](https://github.com/jbarbosaxw)  
+- GitHub: [Repositório](https://github.com/jbarbosaxw
