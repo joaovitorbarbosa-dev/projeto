@@ -1,23 +1,30 @@
 function toggleMode() {
   const html = document.documentElement;
-  html.classList.toggle("light");
-
-  //pegar a teg img
   const img = document.querySelector("#profile img");
 
-  //substituir a imagem
-  //se tiver light mode, adicionar a imagem light
-  if (html.classList.contains("light")) {
-    img.setAttribute("src", "assets/profile.png");
-  }
+  // alterna classe light
+  html.classList.toggle("light");
 
-  //se não tiver light mode, manter a imagem normal
-  else {
-    img.setAttribute("src", "assets/profile.png");
+  if (html.classList.contains("light")) {
+    img.setAttribute("src", "assets/profile.png"); // imagem para modo claro
+    localStorage.setItem("mode", "light");
+  } else {
+    img.setAttribute("src", "assets/profile.png"); // imagem para modo escuro
+    localStorage.setItem("mode", "dark");
   }
 }
 
-// armazenar a função em um botão
-localStorage.setItem("mode", "dark");
-const cat = localStorage.getItem("mode");
-localStorager.removeItem("mode");
+// quando a página carrega, mantém o último modo salvo
+window.onload = () => {
+  const savedMode = localStorage.getItem("mode");
+  const html = document.documentElement;
+  const img = document.querySelector("#profile img");
+
+  if (savedMode === "light") {
+    html.classList.add("light");
+    img.setAttribute("src", "assets/profile.png");
+  } else {
+    html.classList.remove("light");
+    img.setAttribute("src", "assets/profile.png");
+  }
+};
